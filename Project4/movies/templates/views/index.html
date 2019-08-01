@@ -1,0 +1,30 @@
+{% extends "views/layout.html" %}
+
+{% block content %}
+
+<h1>Catalog of Movies</h1>
+
+<table id="tblCatalog" class="table table-bordered table-strip table-hover">
+    <thead>
+        <tf>
+            <th>Id</th>
+            <th>Title</th>
+            <th>Year</th>
+            <th>Price</th>
+        </tf>
+    </thead>
+    <tbody>
+    </tbody>
+</table>
+
+
+{% endblock %}
+
+
+{%block bottom %}
+
+
+{% load static %}
+<script src="{% static 'catalog.js' %}"></script>
+
+{% endblock %}
